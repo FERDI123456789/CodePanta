@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --discord_blue: #2c334d;
+    --discord_dark_blue: #3f4147;
+    --box_right-box-shadow: 0px 1px 20px rgb(0, 0, 0); /* Weicher Schatten */
+    --font-font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    display: block;
+}
+
+body {
+    background-color: #36393f; /* Discord Hintergrundfarbe */
+    margin: 0;
+}
+
+/* === Intruktions (anleitung) === */
+.anleitung {
+    font-size: 30px;
+    color: rgb(0, 168, 168);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lol {
+width: auto;
+height: auto;
+background-color: #202225;
+text-align: center;
+border-radius: 10px;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+float: right;
+margin-right: 150px;
+max-height: 500px;
+}
+
+/* === Video player === */
+
+.video {
+    width: auto;
+    height: auto;
+}
+
+.lol_2 {
+    width: 500px;
+    height: 500px;
+    background-color: #202225;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    float: left;
+    margin-left: auto;
+    margin-left: 150px;
+}
+
+p {
+    font-family: var(--font-font-family);
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* Weiß */
+}
+
+/* === Navigation Line === */
+
+.nav {
+    border-radius: 10px;
+    height: 50px;
+    background-color: var(--discord_dark_blue); /* Dunkles Discord Blau */
+    padding: 0;
+    margin: 0px 50px 5px 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box_right-box-shadow); /* Weicher Schatten */
+}
+
+.logo {
+    color: #000000; /* Weiß */
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.Items{
+    margin-left: 150px;
+}
+
+.nav-links {
+    margin-right: 20px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 100px;
+}
+
+.nav-links li a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
