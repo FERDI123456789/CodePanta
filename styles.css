@@ -1,62 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+*:before,:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb
+}
+
+embed, iframe, img, object, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+
+:before,:after {
+    --tw-content: ""
+}
+
+html,:host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Inter Variable,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent
+}
+
 :root {
-    --discord_blue: #2c334d;
-    --discord_dark_blue: #3f4147;
+    --discord_blue: #24293b;
+    --discord_dark_blue: #17191d;
     --box_right-box-shadow: 0px 1px 20px rgb(0, 0, 0); /* Weicher Schatten */
     --font-font-family: 'Open Sans', sans-serif;
 }
 
-hr {
-    display: block;
-}
-
 body {
-    background-color: #36393f; /* Discord Hintergrundfarbe */
+    background-color: var(--discord_dark_blue); /* Hintergrundfarbe auf Discord Dunkelblau setzen */
     margin: 0;
+    font-family: var(--font-font-family);
 }
 
-/* === Intruktions (anleitung) === */
-.anleitung {
-    font-size: 30px;
-    color: rgb(0, 168, 168);
-    font-weight: bold;
-    font-style: italic;
+#Grau {
+    background-color: #222943;
 }
 
-.lol {
-width: auto;
-height: auto;
-background-color: #202225;
-text-align: center;
-border-radius: 10px;
-align-items: center;
-justify-content: center;
-margin-top: 50px;
-float: right;
-margin-right: 150px;
-max-height: 500px;
+/* === 1 Intruktions (anleitung) === */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fünf Spalten mit gleicher Breite */
+    grid-gap: 50px; /* Abstand zwischen den Boxen */
+    padding: 20px;
 }
 
-/* === Video player === */
-
-.video {
-    width: auto;
-    height: auto;
+.box {
+    background-color: #17191d; /* Hintergrundfarbe auf Discord Blau setzen */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: none; /* Startet ohne Schatten */
+    transition: box-shadow 0.3s ease;
+    color: #b9c7ff; /* Weiß */
 }
 
-.lol_2 {
-    width: 500px;
-    height: 500px;
-    background-color: #202225;
+/*2*/
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 500px); /* Fünf Spalten mit gleicher Breite */
+    grid-gap: 50px; /* Abstand zwischen den Boxen */
+    padding: 20px;
+    margin-left: 225px;
+    box-shadow: 3px 10px 5px rgb(#000000); /* Startet ohne Schatten */
+}
+
+.box2 {
+    background-color: var(--discord_blue); /* Hintergrundfarbe auf Discord Blau setzen */
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    float: left;
-    margin-left: auto;
-    margin-left: 150px;
+    display: flex;
+    height: auto;
+    box-shadow: 0px 10px 10px #000000;
+    box-shadow: -0px 10px 10px #000000;
+    color: whitesmoke; /* Weiß */;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Breite des Video-Containers */
+    height: 100vh; /* Höhe des Video-Containers, z.B. 100% der Bildschirmhöhe */
+  }
+  
+  .video-container video {
+    max-width: 100%; /* Maximale Breite des Videos */
+    max-height: 100%; /* Maximale Höhe des Videos */
+  }
+  
+
+
+.box:hover {
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.444);
 }
 
 p {
@@ -65,44 +130,49 @@ p {
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: #ffffff; /* Weiß */
 }
 
 /* === Navigation Line === */
 
 .nav {
-    border-radius: 10px;
-    height: 50px;
-    background-color: var(--discord_dark_blue); /* Dunkles Discord Blau */
+    width: 100%;
+    height: 40px;
+    background-color:#17191d; /* Hintergrundfarbe auf Discord Blau setzen */
     padding: 0;
-    margin: 0px 50px 5px 50px;
     display: flex;
     align-items: center;
-    box-shadow: var(--box_right-box-shadow); /* Weicher Schatten */
+    text-align: center;
+    box-shadow: 0px 2px 15px rgb(99, 68, 255);
 }
 
 .logo {
-    color: #000000; /* Weiß */
-    margin-left: 200px;
+    color: rgb(99, 68, 255); /* Weiß */
+    margin-left: 100px;
     font-size: 20px;
 }
 
+/*
+1 rgb(85, 71, 157);
+2 rgb(54, 38, 132)
+3 rgb(62, 44, 154)
+*/
+
 .Items{
-    margin-left: 150px;
+    margin-left: 140px;
 }
 
 .nav-links {
-    margin-right: 20px;
+    margin-right: 100px;
 }
 
 .nav-links li {
     display: inline;
-    margin-left: 100px;
+    margin-left: 75px;
 }
 
 .nav-links li a {
     font-size: 30px;
     font-weight: bold;
-    color: #ffffff;
+    color: whitesmoke; /* Anpassen der Textfarbe */
     text-decoration: none;
 }
