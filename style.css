@@ -190,13 +190,13 @@ body {
 .spanSize{
     font-size: 70px;
 }
-.Movies {
+.Stuf {
     height: 50px;
     font-size: 25px;
-    background-color: rgb(19, 0, 31);
+    background-color: rgb(158, 2, 88);
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     padding-left: 50px;
     width: 200px;
     }
